@@ -1,12 +1,32 @@
 import routesConstants from "../constants/routeConstants";
 import { Link } from "react-router-dom";
 // import { Icons } from "../assets/icons";
-import { IoMdClose } from "react-icons/io";
-import { MdMenu } from "react-icons/md";
+// import { IoMdClose } from "react-icons/io";
+// import { MdMenu } from "react-icons/md";
 import { useState } from "react";
 
 const Header = () => {
+
+  const [walletAddress, setWalletAddress] = useState("");
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  const connectWallet = async () => {
+    if (typeof window.ethereum !== "undefined") {
+      try {
+        // Request account access
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        const address = accounts[0]; // Get the first account
+        setWalletAddress(address); // Set the address in state
+        console.log("Connected Wallet Address:", address);
+      } catch (error) {
+        console.error("Error connecting to MetaMask:", error);
+      }
+    } else {
+      alert("MetaMask is not installed. Please install it to use this feature.");
+    }
+  };
 
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
@@ -30,26 +50,32 @@ const Header = () => {
           >
             <div className="flex justify-end mb-10 lg:hidden hover:opacity-80 transition-all duration-300 ease-in-out">
               <button type="button" onClick={toggleNavbar}>
-                <IoMdClose size={32} />
               </button>
             </div>
           </nav>
         </div>
         <div className="lg:flex items-center xl:gap-x-7 lg:gap-x-6 gap-x-5 hidden">
-          <Link
+          <button
             to=""
             className="capitalize text-base font-semibold text-white transition-all duration-300 ease-in-out px-[30px] min-h-[44px] border-[1px] border-white border-solid rounded-lg inline-flex items-center justify-center text-center hover:bg-grad-theme-135 whitespace-nowrap w-full"
           >
             Connect
-          </Link>
+          </button>
         </div>
+        <div className="connect-wallet">
+      {!walletAddress ? (
         <button
-          type="button"
-          className="lg:hidden hover:opacity-80 duration-300 ease-in-out translate-all"
-          onClick={toggleNavbar}
+          onClick={connectWallet}
+          className="px-4 py-2 bg-blue-500 text-white rounded"
         >
-          <MdMenu size={32} />
+          Connect MetaMask Wallet
         </button>
+      ) : (
+        <p className="mt-4 text-green-600">
+        {walletAddress}
+        </p>
+      )}
+    </div>
       </div>
 
       <div className="flex flex-col items-center justify-center max-w-[1020px] mx-auto text-center font-montserrat flex-1 relative z-10 mt-[50px] px-4">
