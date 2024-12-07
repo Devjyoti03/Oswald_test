@@ -1,6 +1,6 @@
 import routesConstants from "../constants/routeConstants";
 import { Link } from "react-router-dom";
-// import Icon from "../assets/logo.png";
+import Icon from "../assets/logo.png";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import { SiPolygon, SiSolidity } from "react-icons/si";
@@ -36,13 +36,13 @@ const Header = () => {
 
   return (
     <header className="text-white flex flex-col relative after:content-[''] after:bg-grad-theme-135 after:absolute xl:after:w-[520px] xl:after:h-[520px] md:after:w-[300px] md:after:h-[300px] after:w-[200px] after:h-[200px] after:top-[90%] after:left-0 after:blur-[70px] after:rounded-full before:content-[''] before:bg-grad-theme-135 before:absolute xl:before:w-[520px] xl:before:h-[520px] md:before:w-[300px] md:before:h-[300px] before:w-[200px] before:h-[200px] before:top-[60%] before:right-0 before:blur-[70px] before:rounded-full">
-      <div className="max-w-[1320px] px-4 flex items-center justify-between py-[30px] mx-auto w-full relative">
+      <div className="max-w-[1320px] px-4 flex items-center justify-between py-[10px] mx-auto w-full relative">
         <div className="flex items-center gap-x-9">
           <Link
             to={routesConstants.ROOT}
             className="max-w-[120px] lg:max-w-[160px] md:max-w-[140px]"
           >
-            {/* <img src={Icon} alt="OSWALD" /> */}
+            <img src={Icon} alt="OSWALD" />
           </Link>
           <nav
             className={`lg:relative lg:right-auto lg:top-auto lg:bg-transparent lg:p-0 fixed right-0 top-0 bg-errie-black h-full z-50 p-5 sm:w-[300px] w-full translate-alls ease-in-out duration-300 shadow-navbar lg:shadow-none lg:translate-x-0 ${

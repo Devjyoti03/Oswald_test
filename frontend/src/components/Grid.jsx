@@ -1,5 +1,5 @@
-import { FEATURES_GRID_DATA } from "../../data/mockData";
-import useGradientUpdater from "../../hooks/useGradientUpdater";
+import { FEATURES_GRID_DATA } from "../data/mockData.js";
+import useGradientUpdater from "../hooks/useGradientUpdater";
 import { motion } from "framer-motion";
 
 const Grid = () => {

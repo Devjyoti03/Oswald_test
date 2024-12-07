@@ -1,7 +1,9 @@
-import { FEATURES_ALL } from "../../data/mockData";
+import { FEATURES_ALL } from "../data/mockData.js";
 import { motion } from "framer-motion";
 
 const Features = () => {
+
+  
   return (
     <section className="max-w-[1180px] mx-auto lg:py-[65px] py-10 text-white px-4">
       <div className="text-center">

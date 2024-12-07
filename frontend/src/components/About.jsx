@@ -9,9 +9,9 @@ import 'swiper/css/mousewheel'; // Import Mousewheel styles
 
 const teamMembers = [
   {
-    name: 'Anindya Roy',
+    name: 'Soham De',
     image: '/1.png',
-    detail: 'Cybersecurity Expert',
+    detail: 'Full Stack Web3 Engineer',
   },
   {
     name: 'Arghya Chowdhury',
@@ -29,9 +29,9 @@ const teamMembers = [
     detail: 'Web3 & Backend Engineer',
   },
   {
-    name: 'Soham De',
+    name: 'Anindya Roy',
     image: '/5.png',
-    detail: 'Full Stack Web3 Engineer',
+    detail: 'Cybersecurity Expert',
   },
 ];
 
@@ -53,7 +53,7 @@ const About = () => {
   return (
     <Box sx={{ width: '100%', padding: '20px 50px', paddingTop: '20px' }}>
       <style>{customStyles}</style>
-      <Typography variant="h4" align="CENTER" gutterBottom className="text-2">
+      <Typography variant="h4" align="center" gutterBottom className="text-2">
         Meet Our Team:
         {/* <img style={{ verticalAlign: 'middle', marginLeft: '14px' }} src="crv.svg" alt="bal" /> */}
       </Typography>

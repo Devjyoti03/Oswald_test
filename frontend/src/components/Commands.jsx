@@ -1,5 +1,5 @@
-import { COMMANDS } from "../../data/mockData";
-import useGradientUpdater from "../../hooks/useGradientUpdater";
+import {COMMANDS} from "../data/mockData.js";
+import useGradientUpdater from "../hooks/useGradientUpdater";
 import { motion } from "framer-motion";
 
 const Commands = () => {
@@ -63,7 +63,7 @@ const Commands = () => {
               >
                 <div
                   className={`rounded-3xl bg-jet h-full grid items-center md:grid-cols-2 ${
-                    FRAMEWORK_DATA?.length - 1 === index
+                    COMMANDS?.length - 1 === index
                       ? "lg:ps-10 ps-6"
                       : "lg:py-12 lg:px-10 py-8 px-6"
                   } xxl:gap-20 xl:gap-16 lg:gap-12 gap-10 relative overflow-hidden ${
@@ -72,7 +72,7 @@ const Commands = () => {
                 >
                   <div
                     className={`relative z-10 ${
-                      FRAMEWORK_DATA?.length - 1 === index &&
+                      COMMANDS?.length - 1 === index &&
                       "lg:py-10 pt-6 pe-6"
                     }`}
                   >
