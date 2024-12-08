@@ -49,7 +49,7 @@ function Framework() {
           }}
           className="howTrigger"
         >
-          <h2>How Lumen Safe works?</h2>
+          <h2>How Oswald works? Here's how...</h2>
         </button>
         <div className="tutorVid">
           <div className="codeTransfer">
