@@ -51,8 +51,7 @@ const Grid = () => {
   return (
     <section className="py-[65px] text-white px-4">
       <h2 className="text-center lg:text-3xl md:text-2xl text-xl font-semibold font-montserrat max-w-[986px] mx-auto">
-        Never waste more than a day handing over design requirements with these
-        features:
+        Empower your Web3 CI/CD journey with Oswald. Automate workflows, secure file integrity, and deliver with confidence. Oswald’s command-driven approach is your ultimate tool for secure and efficient deployments
       </h2>
       <div className="max-w-[1200px] mx-auto lg:mt-[65px] mt-10">
         <div className="grid grid-cols-3 xxl:gap-10 xl:gap-8 lg:gap-6 gap-4 lg:mt-[65px] mt-10">

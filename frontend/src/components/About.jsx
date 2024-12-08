@@ -6,31 +6,31 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/mousewheel'; // Import Mousewheel styles
-
+import Image1 from "../assets/8.png";
 const teamMembers = [
   {
     name: 'Soham De',
-    image: '/1.png',
+    image: Image1,
     detail: 'Full Stack Web3 Engineer',
   },
   {
     name: 'Arghya Chowdhury',
-    image: '/2.png',
+    image: Image1,
     detail: 'AI - ML Engineer',
   },
   {
     name: 'Devjyoti Banerjee',
-    image: '/3.png',
+    image: Image1,
     detail: 'UI/UX Frontend Designer',
   },
   {
     name: 'Sayan Genri',
-    image: '/4.png',
+    image: Image1,
     detail: 'Web3 & Backend Engineer',
   },
   {
     name: 'Anindya Roy',
-    image: '/5.png',
+    image: Image1,
     detail: 'Cybersecurity Expert',
   },
 ];

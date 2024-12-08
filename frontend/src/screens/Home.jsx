@@ -4,7 +4,6 @@ import Backup from '../components/Backup'
 import Features from '../components/Features'
 import About from '../components/About'
 import Grid from '../components/Grid'
-import Chains from '../components/Chains'
 import Commands from '../components/Commands'
 
 const Home = () => {
@@ -13,7 +12,6 @@ const Home = () => {
         <Grid/>
         <Framework />
         <Backup/>
-        <Chains/>
         <Features/>
         <Commands/>
         <About/>

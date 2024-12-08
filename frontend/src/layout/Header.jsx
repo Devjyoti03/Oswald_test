@@ -94,7 +94,7 @@ const Header = () => {
           <span className="gradi-theme-text">OSWALD CI-CD.</span>
         </h1>
         <p className="lg:text-xl md:text-lg text-base my-[30px]">
-          Never lose your codes! .....to be written later.
+          Secure your files and streamline your processes with Oswald CI/CD. Experience seamless integration, robust automation, and the power of 8 commands ensuring efficient, reliable, and secure deployments every time
         </p>
       </div>
 

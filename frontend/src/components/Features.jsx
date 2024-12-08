@@ -7,11 +7,9 @@ const Features = () => {
   return (
     <section className="max-w-[1180px] mx-auto lg:py-[65px] py-10 text-white px-4">
       <div className="text-center">
-        <p className="font-montserrat lg:text-xl md:text-lg text-base mb-4">
-          Behind Every Great Delivery
-        </p>
+        
         <h3 className="lg:text-3xl md:text-2xl text-xl font-montserrat font-semibold">
-          The Collective Delivery Squad
+          Some of its uses and advantages are:
         </h3>
       </div>
       <div className="lg:mt-[90px] md:mt-16 mt-12 grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-y-[70px] md:gap-y-16 gap-y-12 lg:gap-x-[100px] md:gap-x-16 gap-x-12">

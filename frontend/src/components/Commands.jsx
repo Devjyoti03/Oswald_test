@@ -36,7 +36,7 @@ const Commands = () => {
     <section className="lg:py-[65px] py-10 text-white px-4">
       <div className="max-w-[1200px] mx-auto">
         <h3 className="lg:text-3xl md:text-2xl text-xl text-center font-semibold max-w-[767px] mx-auto">
-          Transform work practices forever. <br /> Our Framework for the future:
+          Our Commands for our npm package:
         </h3>
         <div className="grid xxl:gap-y-[30px] xl:gap-y-6 gap-y-4 items-start lg:mt-[65px] mt-10">
           {COMMANDS?.map(({ id, title, image, description }, index) => {
@@ -79,7 +79,7 @@ const Commands = () => {
                     <h3 className="lg:text-2xl md:text-xl text-lg font-semibold mb-3">
                       {title}
                     </h3>
-                    <p className="lg:text-xl md:text-lg text-base font-source-sans font-normal">
+                    <p className="lg:text-xl md:text-lg text-base font-source-sans font-normal" style={{ whiteSpace: 'pre-line' }}>
                       {description}
                     </p>
                   </div>

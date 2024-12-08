@@ -87,14 +87,14 @@ function Framework() {
           <div className="polygon">
             <img src={polygon} className="polygon-logo" alt="" srcset="" />
             <span>
-              CID of your backup stored in Polygon Network (Added Security
+              UID of your backup stored in Polygon Network (Added Security
               Layer)
             </span>
           </div>
           <img src={arrow} alt="" className="arrow6" />
           <div className="lumen">
             <img src={lumenSafe} alt="" className="lumen-logo" srcset="" />
-            <span>Your Backups Fetched By Lumen Safe</span>
+            <span>Your Backups Fetched By OSWALD</span>
           </div>
         </div>
       </div>

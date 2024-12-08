@@ -11,6 +11,13 @@ import process_map from "./images/process_map.png";
 import scope from "./images/scope.png";
 import sync_tools from "./images/sync_tools.png";
 import user_stories from "./images/user_stories.png";
+import I1 from "./images/1.png"
+import I2 from "./images/2.png"
+import I3 from "./images/3.png"
+import I4 from "./images/4.png"
+import I5 from "./images/5.png"
+import I6 from "./images/6.png"
+import I7 from "./images/7.png"
 
 export const Images = {
   ai_assisted,
@@ -26,4 +33,5 @@ export const Images = {
   scope,
   sync_tools,
   user_stories,
+  I1, I2, I3, I4, I5, I6, I7,
 };

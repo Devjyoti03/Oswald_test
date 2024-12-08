@@ -5,111 +5,125 @@ export const FEATURES_ALL = [
   {
     id: "collective_1",
     icon: Icons.project_cord,
-    title: "Project Coordination",
+    title: "For Everyone",
     description:
-      "Ensure efficient planning, execution, and completion of projects, keeping them on schedule and within budget.",
+      "Anyone can use our npm package to backup thier files.",
   },
   {
     id: "collective_2",
     icon: Icons.risk_mgmt,
     title: "Risk Management",
     description:
-      "Proactively identify and mitigate risks to prevent delays and project failures.",
+      "Saving unnecesary deleting of web3 files from GitHub.",
   },
   {
     id: "collective_3",
     icon: Icons.communication,
-    title: "Communication",
+    title: "Complete CI/CD Implementation",
     description:
-      "They maintain open communication between teams and stakeholders, ensuring alignment and clarity on project goals.",
+      "Integrate, Deploy and Backup files on GitHub.",
   },
   {
     id: "collective_4",
     icon: Icons.strategic_align,
-    title: "Strategic Alignment",
+    title: "Audit Consensus using Agents",
     description:
-      "They ensure projects align with and contribute to the organisation’s strategic objectives.",
+      "We are providing auditing using Agents",
   },
   {
     id: "collective_5",
     icon: Icons.scope_mgmt,
-    title: "Scope Management",
+    title: "Scan and Deploy using Agents",
     description:
-      "Changes in project scope or resources, adapting strategies to ensure successful outcomes.",
+      "Changes in project will be scanned and deployed using Agents.",
   },
   {
     id: "collective_6",
     icon: Icons.quality_assur,
     title: "Quality Assurance",
     description:
-      "Oversee project standards and quality, ensuring outputs meet or exceed expectations.",
+      "Oversee project standards and quality, ensuring outputs deployed on any EVM chain",
   },
 ];
 
 export const COMMANDS = [
   {
-    id: "framework_1",
-    image: Images.framework1,
-    title: "Requirements Management",
-    description:
-      "Track project progress, health, risks, and status. Log feedback, and monitor scope creep to ensure stakeholders are always informed, providing a clear and up-to-date understanding of the project's status for effective decision-making and smoother execution.",
+    id: "I1",
+    image: Images.I1,
+    title: "Pipeline Setup Commands",
+    description:`1. **oswald setup-pipeline**: Sets up the Walrus GitHub Actions workflow for automatic backups.\n
+   2. **oswald remove-pipeline**: Removes the Walrus GitHub Actions workflow.\n
+   3. **oswald armor-on**: Activates the Slither security analysis workflow for smart contracts.\n
+   4. **oswald armor-off**: Deactivates the Slither security analysis workflow.`
   },
   {
-    id: "framework_2",
-    image: Images.framework2,
-    title: "Automatic BPMN 2.0 Generation",
-    description:
-      "Leverage intuitive AI to create Process Maps, User Journeys, and flows automatically. Generate diagrams for each feature effortlessly, eliminating the need for manual layout and streamlining the visualization process.",
+  id: "I2",
+  image: Images.I6,
+  title: "Configuration Commands",
+  description: `
+    1. **oswald setupcreds**: Saves your email address for workflow notifications.
+       
+    2. **oswald savechain**: Saves a new blockchain network configuration.
+       
+    3. **oswald deletechain**: Deletes an existing blockchain network configuration.
+  `,
+},
+  {
+    id: "I3",
+    image: Images.I5,
+    title: "Hardhat Integration Commands",
+    description: `
+      **oswald setuphardhat <contract_name> <chain_name>**
+      - Creates a GitHub Actions workflow to deploy a smart contract using Hardhat.\n
+      - Example: oswald setuphardhat MyContract polygon
+    `,
   },
   {
-    id: "framework_3",
-    image: Images.framework3,
-    title: "Test Automation",
+    id: "I4",
+    image: Images.I4,
+    title: "General Commands",
     description:
-      "Simplify the creation of Acceptance Criteria and execution of automated test scripts. Track testing progress and eliminate the need for manual testing, enhancing efficiency and accuracy in the testing process.",
-  },
-  {
-    id: "framework_4",
-    image: Images.framework4,
-    title: "Integrate into your existing ecosystem",
-    description:
-      "Integrate into your existing ecosystem seamlessly by syncing Reqops with tools like Jira, Azure, and Asana. Continue using your preferred tools while Reqops creates and manages your tickets, saving you the time and effort of manual ticket creation.",
+      `
+    1. **oswald help**: Displays this help information.
+    
+    2. **oswald credits**: Shows the contributors of the project.
+  `,
   },
 ];
 
 export const FEATURES_GRID_DATA = [
   {
     id: "feat_grid_1",
-    title: "AI Process Map Generation",
+    title: "Simple & Easy to Use",
     description:
-      "Generate User Journeys and automate the Journey creation flow with AI",
+      "Just install the npm package, and setup your Private Key & Contract Address to start your journey.",
     image: Images.ai_process,
   },
   {
     id: "feat_grid_2",
-    title: "Automatic AI Generated User Stories",
-    description: "Create User Stories with AI based on your User Journeys.",
+    title: "Archival Solution on SUI using Walrus",
+    description: "Create an advanced Archival Solution on SUI blockchain using Walrus, enabling secure, decentralized, and efficient data storage and retrieval for streamlined Web3 operations.",
     image: Images.user_stories,
   },
   {
     id: "feat_grid_3",
-    title: "AI Test Case Generation",
+    title: "A Complete CI/CD PIPELINE",
     description:
-      "Easily Sync your User Import Designs seamlessly to create Acceptance Criteria for every screen and each User Story. Stories, Epics, and Acceptance Criteria to Jira or Azure for production.",
+      "Comprehensive CI/CD pipeline to streamline development and deployment, ensuring seamless integration, automated testing, and continuous delivery of high-quality software with enhanced efficiency and reliability.",
     image: Images.ai_test_case,
   },
   {
     id: "feat_grid_4",
-    title: "Import your Designs",
+    title: "Audit Consensus using Agents",
     description:
-      "Import your designs from Figma seamlessly and use AI to narrate your user flows.",
+      "Implementing Audit Consensus using intelligent agents to enhance accuracy, transparency, and efficiency.",
     image: Images.import_design,
   },
   {
     id: "feat_grid_5",
-    title: "Sync to your Tools",
+    title: "Deploy through any EVM Chains",
     description:
-      "Easily Sync your User Stories, Epics, and Acceptance Criteria to Jira or Azure for production.",
+      "Enable seamless deployment on any EVM-compatible blockchain, ensuring flexibility, scalability, and secure smart contract interactions across networks.",
     image: Images.sync_tools,
   },
 ];
