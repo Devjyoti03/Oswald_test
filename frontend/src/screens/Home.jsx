@@ -6,12 +6,12 @@ import About from '../components/About'
 import Grid from '../components/Grid'
 import Commands from '../components/Commands'
 
-const Home = () => {
+const Home = ({contractData}) => {
   return (
     <div className="overflow-x-hidden">
         <Grid/>
         <Framework />
-        <Backup/>
+        <Backup contractData={contractData} />
         <Features/>
         <Commands/>
         <About/>

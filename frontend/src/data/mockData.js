@@ -97,33 +97,33 @@ export const FEATURES_GRID_DATA = [
     title: "Simple & Easy to Use",
     description:
       "Just install the npm package, and setup your Private Key & Contract Address to start your journey.",
-    image: Images.ai_process,
+    image: Images.I10,
   },
   {
     id: "feat_grid_2",
     title: "Archival Solution on SUI using Walrus",
     description: "Create an advanced Archival Solution on SUI blockchain using Walrus, enabling secure, decentralized, and efficient data storage and retrieval for streamlined Web3 operations.",
-    image: Images.user_stories,
+    image: Images.image,
   },
   {
     id: "feat_grid_3",
     title: "A Complete CI/CD PIPELINE",
     description:
       "Comprehensive CI/CD pipeline to streamline development and deployment, ensuring seamless integration, automated testing, and continuous delivery of high-quality software with enhanced efficiency and reliability.",
-    image: Images.ai_test_case,
+    image: Images.hero,
   },
   {
     id: "feat_grid_4",
     title: "Audit Consensus using Agents",
     description:
       "Implementing Audit Consensus using intelligent agents to enhance accuracy, transparency, and efficiency.",
-    image: Images.import_design,
+    image: Images.I3,
   },
   {
     id: "feat_grid_5",
     title: "Deploy through any EVM Chains",
     description:
       "Enable seamless deployment on any EVM-compatible blockchain, ensuring flexibility, scalability, and secure smart contract interactions across networks.",
-    image: Images.sync_tools,
+    image: Images.npm,
   },
 ];

@@ -27,6 +27,7 @@ const Backup = ({ contractData = [] }) => {
   };
 
   return (
+    <section className="lg:py-[65px] py-10 text-white px-4">
     <div className="container mx-auto p-4">
       <h2 className="text-2xl font-bold mt-4 mb-6 text-center text-white">My Backups</h2>
       {contractData.length === 0 ? (
@@ -55,6 +56,7 @@ const Backup = ({ contractData = [] }) => {
         </div>
       )}
     </div>
+    </section>
   );
 };
 

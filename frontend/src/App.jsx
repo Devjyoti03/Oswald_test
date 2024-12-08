@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path={routesConstants.ROOT} element={<LayoutContainer />}>
-          <Route path={routesConstants.HOME} element={<Home />} />
+          {/* <Route path={routesConstants.HOME} element={<Home />} /> */}
         </Route>
         <Route path={routesConstants.PAGE_NOT_FOUND} element={<NF404 />} />
     </Routes>

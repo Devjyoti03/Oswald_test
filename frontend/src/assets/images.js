@@ -18,6 +18,10 @@ import I4 from "./images/4.png"
 import I5 from "./images/5.png"
 import I6 from "./images/6.png"
 import I7 from "./images/7.png"
+import npm from "./images/npm.png"
+import hero from "./images/hero.png"
+import image from "./images/image.png"
+import I10 from "./images/10.png"
 
 export const Images = {
   ai_assisted,
@@ -34,4 +38,5 @@ export const Images = {
   sync_tools,
   user_stories,
   I1, I2, I3, I4, I5, I6, I7,
+  npm, hero, I10, image,
 };

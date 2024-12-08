@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Icon from "../assets/logo.png";
-import { SiPolygon } from "react-icons/si";
+import { SiPolygon, SiSolidity } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 import Web3 from "web3";
-import Backup from "../components/Backup"; // Import Backup component
+// import Backup from "../components/Backup"; 
+  import Home from "../screens/Home";
 
 const Header = () => {
   const address = "0xc500Ea677F14Eb13BeC6FF39aFC24501496aF372"; // Static address for testing
@@ -189,14 +190,14 @@ const Header = () => {
                   <div className="metamask-text text-white font-semibold text-2xl mt-3 mb-1 flex justify-center items-center">
                     Metamask Wallet
                   </div>
-                  <SiSolidity fontSize={50} color="#fff " />
+                  <SiSolidity fontSize={50} color="#fff" />
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* Pass contractData as props to Backup */}
-        <Backup contractData={contractData} />
+        {contractData && <Home contractData={contractData} />}
       {/* </div> */}
     </header>
   );
