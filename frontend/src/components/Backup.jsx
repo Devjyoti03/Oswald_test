@@ -1,26 +1,20 @@
 import React from 'react';
 
 const Backup = ({ contractData = [] }) => {
-  const handleDownload = (cid) => {
-    const downloadLink = `https://gateway.lighthouse.storage/ipfs/${cid}/`;
-    fetch(downloadLink)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Failed to fetch: ${response.statusText}`);
-        }
-        return response.blob();
-      })
-      .then((blob) => {
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.setAttribute('download', `${cid}.zip`);
-        document.body.appendChild(link);
-        link.click();
-        link.parentNode.removeChild(link);
-      })
-      .catch((error) => console.error('Error downloading the file:', error));
-  };
 
+  const ADDRESS = "https://aggregator.walrus-testnet.walrus.space";
+
+async function downloadBlob(blobId) {
+  const readUrl = `${ADDRESS}/v1/${blobId}`;
+  const response = await axios.get(readUrl, { responseType: 'arraybuffer' });
+
+  if (response.status !== 200) {
+    throw new Error(`Failed to download blob: ${response.statusText}`);
+  }
+
+  // Determine the file path where the zip will be saved
+  const zipFilePath = path.join(DOWNLOAD_DIR, `downloaded_${blobId}.zip`);
+}
   return (
     <section className="lg:py-[65px] py-10 text-white px-4">
     <div className="container mx-auto p-4">
@@ -37,7 +31,7 @@ const Backup = ({ contractData = [] }) => {
                 <span className="font-mono text-gray-300 block truncate">{backup.cid}</span>
               </p>
               <button
-                onClick={() => handleDownload(backup.cid)}
+                onClick={() => downloadBlob(backup.cid)}
                 className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
               >
                 Download Zip
