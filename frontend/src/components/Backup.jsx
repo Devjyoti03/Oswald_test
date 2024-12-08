@@ -21,11 +21,6 @@ const Backup = ({ contractData = [] }) => {
       .catch((error) => console.error('Error downloading the file:', error));
   };
 
-  const formatTimestamp = (timestamp) => {
-    const date = new Date(Number(timestamp) * 1000); // Convert BigInt to Number explicitly
-    return date.toLocaleString();
-  };
-
   return (
     <section className="lg:py-[65px] py-10 text-white px-4">
     <div className="container mx-auto p-4">
@@ -38,12 +33,8 @@ const Backup = ({ contractData = [] }) => {
             <div key={index} className="border border-gray-700 rounded-md p-4 bg-gray-800 shadow-lg">
               <h3 className="text-lg font-semibold text-white mb-2">Backup {index + 1}</h3>
               <p className="text-white mb-1">
-                CID:
+                Walrus ID:
                 <span className="font-mono text-gray-300 block truncate">{backup.cid}</span>
-              </p>
-              <p className="text-white">
-                Timestamp:
-                <span className="font-mono text-gray-300">{formatTimestamp(backup.timestamp)}</span>
               </p>
               <button
                 onClick={() => handleDownload(backup.cid)}
